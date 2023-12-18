@@ -1,0 +1,33 @@
+.signup_1-h3{
+    text-align: center;
+    margin-top: 50px;
+}
+.signup_1-p{
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: -15px;
+    color: #666666;
+}
+.signup_1-textfield{
+    width: 500px;
+    border-radius: 5px;
+}
+.signup_1-inner-box{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 37%;
+}
+.inner-box-p{
+    color: #5c5c5c;
+    font-size: 18px;
+    font-weight: 500;
+}
+.signup_1-p2{
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 16px;
+    color: #666666;
+}
