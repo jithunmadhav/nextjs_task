@@ -1,0 +1,69 @@
+.pagination_1{
+    width: 45px;
+    height: 35px;
+    background-color: #0075FF;
+    border-radius: 35px;
+    position: absolute;
+    left: 50%;
+    color: white;
+    text-align: center;
+    font-size: medium;
+    padding-top: 9px;
+    top: 15%;
+}
+.pagination_2{
+    width: 45px;
+    height: 35px;
+    background: #EFEFEF;
+    border-radius: 35px;
+    position: absolute;
+    left: 53%;
+    color: black;
+    text-align: center;
+    font-size: medium;
+    padding-top: 9px;
+    top: 15%;
+}
+.personal_info_inner-box{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 37%;
+    top: 25%;
+}
+.personal_info-textfield{
+    width: 500px;
+    border-radius: 5px;
+}
+.personal_info-h3{
+    text-align: center;
+    margin-top: -30px;
+}
+.personal_info-p{
+    text-align: center;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: -15px;
+    color: #666666;
+}
+.personal_info-select{
+    width: 97px ;
+    background: white;
+    height: 65px;
+}
+.personal_info-date{
+    background: white;
+    height: 60px;
+    color: #666666;
+}
+.personal_info-textfield2{
+    width: 610px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.personal_info-textarea{
+    font-size: 20px;
+    height: 100px;
+    background-color: white;
+}
