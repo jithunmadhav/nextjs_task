@@ -21,7 +21,7 @@ export const Personal_info=()=>{
             <p className='personal_info-p'>Please answer questions as accurately as possible.</p><br/>
 
             <div style={{ display:'flex' }}>
-            <Select className='personal_info-select' defaultValue={['Mr']} onChange={handleChange}
+            <Select placeholder='Mr' className='personal_info-select' defaultValue={['Mr']} onChange={handleChange}
           slotProps={{listbox: { sx: {
             width: '100%',
           },
