@@ -4,12 +4,12 @@
     background-color: #0075FF;
     border-radius: 35px;
     position: absolute;
-    left: 50%;
+    left: 47%;
     color: white;
     text-align: center;
     font-size: medium;
     padding-top: 9px;
-    top: 15%;
+    top: 13%;
 }
 .pagination_2{
     width: 45px;
@@ -17,19 +17,20 @@
     background: #EFEFEF;
     border-radius: 35px;
     position: absolute;
-    left: 53%;
+    left: 50%;
     color: black;
     text-align: center;
     font-size: medium;
     padding-top: 9px;
-    top: 15%;
+    top: 13%;
 }
 .personal_info_inner-box{
     display: flex;
     flex-direction: column;
     position: absolute;
     left: 37%;
-    top: 25%;
+    top: 22%;
+    width: 500px;
 }
 .personal_info-textfield{
     width: 500px;
@@ -58,7 +59,6 @@
     color: #666666;
 }
 .personal_info-textfield2{
-    width: 610px;
     border-radius: 5px;
     font-size: 20px;
 }

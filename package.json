@@ -16,10 +16,14 @@
     "@mui/icons-material": "^5.15.0",
     "@mui/joy": "^5.0.0-beta.18",
     "@mui/material-nextjs": "^5.15.0",
+    "@reduxjs/toolkit": "^2.0.1",
     "mdb-react-ui-kit": "^6.1.0",
+    "mongoose": "^8.0.3",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",
-    "react-icons": "^4.12.0"
+    "react-icons": "^4.12.0",
+    "react-redux": "^9.0.4",
+    "redux": "^5.0.0"
   }
 }

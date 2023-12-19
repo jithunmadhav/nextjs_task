@@ -1,0 +1,8 @@
+.err{
+    text-align: center;
+    font-size: 16px;
+    font-family: monospace;
+    color: red;
+    margin-top: -20px;
+    height: 10px;
+}

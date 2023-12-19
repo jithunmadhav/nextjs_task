@@ -4,12 +4,12 @@
     background: #EFEFEF;
     border-radius: 35px;
     position: absolute;
-    left: 50%;
+    left: 47%;
     color: black;
     text-align: center;
     font-size: medium;
     padding-top: 9px;
-    top: 15%;
+    top: 13%;
 }
 .Fin_pagination_2{
     width: 45px;
@@ -17,12 +17,12 @@
     background-color: #0075FF;
     border-radius: 35px;
     position: absolute;
-    left: 53%;
+    left: 50%;
     color: white;
     text-align: center;
     font-size: medium;
     padding-top: 9px;
-    top: 15%;
+    top: 13%;
 }
 .Fin_info-select{
     background: white;
