@@ -21,7 +21,7 @@ export default function ViewForm({id}){
       }, 1500);
     }, []);
     useEffect(() => {
-      fetch(`http://localhost:3000/api/get_data/?id=${encodeURIComponent(id)}`, {
+      fetch(`http://localhost:3000/api/get_data/${id}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -41,7 +41,6 @@ export default function ViewForm({id}){
           console.log(error); 
         });
     }, []);
-    console.log(result);
 
     return(
 
