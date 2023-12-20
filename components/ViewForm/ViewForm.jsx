@@ -93,7 +93,7 @@ export default function ViewForm({id}){
         /><br/>
     
             </div>
-            <div style={{ height:'130px' }}></div>
+            <div style={{ height:'50px' }}></div>
 
             <div className='v-form-inner-div2'>
             <p className='inner-box-p'>Current Address :</p>
