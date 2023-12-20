@@ -21,7 +21,7 @@ export default function ViewForm({id}){
       }, 1500);
     }, []);
     useEffect(() => {
-      fetch(`http://localhost:3000/api/get_data/${id}`, {
+      fetch(`https://nextjstask1.netlify.app/api/get_data/${id}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',

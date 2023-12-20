@@ -27,7 +27,7 @@ export const Financial_info=()=>{
     e.preventDefault()
     try {
       if(emp_status && emp_status.trim() && investment.trim()){
-        fetch(`http://localhost:3000/api/add_data`, {
+        fetch(`https://nextjstask1.netlify.app/api/add_data`, {
           method: "POST",
           headers: {
             "Content-type": "application/json",
