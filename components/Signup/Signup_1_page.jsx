@@ -12,7 +12,7 @@ import { useDispatch } from 'react-redux';
 
 export const Signup_1_page = ({setpage}) => {
   const dispatch = useDispatch()
-  const baseURL ='http://localhost:3000/api/add_data'
+  const baseURL ='https://nextjstask1.netlify.app/api/add_data'
   const [showPassword1, setShowPassword1] = useState(false);
   const [showPassword2, setShowPassword2] = useState(false);
   const [email, setemail] = useState('')

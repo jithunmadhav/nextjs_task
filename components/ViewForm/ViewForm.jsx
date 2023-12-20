@@ -55,10 +55,11 @@ export default function ViewForm({id}){
       )}
       {showPage && (
         <>
-        <h2 className="v-form-h1">Form Data</h2>
-        <Link href={'/'}>
-          <p className='back-btn'><u>Back</u></p>
+         <Link href={'/'}>
+          <p className='back-btn'>Back</p>
         </Link>
+        <h2 className="v-form-h1">Form Data</h2>
+       
         <div className='v-fom-outer-div'>
             <div className='v-form-inner-div1'>
         <p className='inner-box-p'>Full name :</p>
@@ -92,7 +93,7 @@ export default function ViewForm({id}){
         /><br/>
     
             </div>
-
+            <div style={{ height:'130px' }}></div>
 
             <div className='v-form-inner-div2'>
             <p className='inner-box-p'>Current Address :</p>

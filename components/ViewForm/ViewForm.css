@@ -35,3 +35,48 @@ height: 60vh;
     color: blue;
     cursor: pointer;
 }
+@media (max-width: 700px) {
+    .v-form-h1{
+        text-align: left;
+        margin-left: 23px;
+        font-weight: 600;
+        font-size: x-large;
+        color: rgb(78, 78, 78);
+        font-family: monospace;
+    }
+    .v-fom-outer-div{
+        display: flex;
+        flex-direction: column;
+        }
+        .v-form-inner-div1{
+            width: 65%;
+            height: 60vh;
+            padding: 0 7% 7% 7%;
+        }
+        .v-form-inner-div2{
+            width: 65%;
+           height: 90vh;
+           padding: 0 7% 7% 7%;
+        
+        }
+        .v-form-textfield{
+            width: 500px;
+            border-radius: 5px;
+        }
+        .v-form-textfield{
+            width: 320px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .v-form-textarea{
+            background-color: white;
+            width: 320px;
+        }
+        .back-btn {
+            position: absolute !important;
+            color: blue;
+            top: 10%;
+            left: 79%;
+            cursor: pointer;
+        }
+}

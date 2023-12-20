@@ -32,3 +32,36 @@
     margin-top: 16px;
     color: #666666;
 }
+@media (max-width: 700px) {
+    .signup_1-textfield{
+        width: 320px;
+        border-radius: 5px;
+    }
+    .signup_1-inner-box{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 0%;
+        margin-top: -16px;
+        padding: 0 7% 7% 7%;
+    }
+    .signup_1-p{
+        text-align: center;
+        font-size: 11px;
+        font-weight: 700;
+        font-family: 'Courier New', Courier, monospace;
+        margin-top: -12px;
+        color: #666666;
+    }
+    .signup_1-p2{
+        text-align: center;
+        font-size: 11px;
+        font-family: 'Courier New', Courier, monospace;
+        margin-top: 16px;
+        color: #666666;
+    }
+    .signup_1-h3{
+        text-align: center;
+        margin-top: 15px;
+    }
+}

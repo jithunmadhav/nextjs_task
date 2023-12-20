@@ -67,3 +67,56 @@
     height: 100px;
     background-color: white;
 }
+@media (max-width: 700px) {
+    .personal_info-textfield{
+        width: 320px;
+        border-radius: 5px;
+    }
+    .personal_info_inner-box {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        top: 22%;
+        padding: 0 7% 7% 7%;
+        width: 322px;
+    }
+    .personal_info-h3 {
+        text-align: center;
+        margin-top: -12px;
+    }
+    .pagination_1{
+        width: 45px;
+        height: 35px;
+        background-color: #0075FF;
+        border-radius: 35px;
+        position: absolute;
+        left: 36%;
+        color: white;
+        text-align: center;
+        font-size: medium;
+        padding-top: 9px;
+        top: 13%;
+    }
+    .pagination_2 {
+        width: 45px;
+        height: 35px;
+        background: #EFEFEF;
+        border-radius: 35px;
+        position: absolute;
+        left: 53%;
+        color: black;
+        text-align: center;
+        font-size: medium;
+        padding-top: 9px;
+        top: 13%;
+    }
+    .personal_info-p {
+        text-align: center;
+        font-size: 10px;
+        font-weight: 700;
+        font-family: 'Courier New', Courier, monospace;
+        margin-top: -15px;
+        color: #666666;
+    }
+}
