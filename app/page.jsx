@@ -10,8 +10,6 @@ import store from '@/redux/store';
 
  function Home() {
   const [page, setpage] = useState('signup')
-  console.log(page,"######3333");
-
   return (
     
     <DataProvider>

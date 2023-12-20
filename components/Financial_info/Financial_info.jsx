@@ -10,10 +10,13 @@ import Button from '@mui/joy/Button';
 import { useState } from 'react';
 import { useSelector } from 'react-redux';
 import { useRouter } from 'next/navigation';
+import SuccessPage from '../SuccessPage/SuccessPage';
 
 export const Financial_info=()=>{
   const {signup,personal} = useSelector(state => state)
   const [investment, setinvestment] = useState('')
+  const [openSuccessPage, setopenSuccessPage] = useState(false)
+  const [id, setid] = useState('')
   const [emp_status, setemp_status] = useState('')
   const [err, seterr] = useState('')
   const router = useRouter();
@@ -24,19 +27,25 @@ export const Financial_info=()=>{
     e.preventDefault()
     try {
       if(emp_status && emp_status.trim() && investment.trim()){
-        const res = await fetch(`http://localhost:3000/api/add_data`, {
+        fetch(`http://localhost:3000/api/add_data`, {
           method: "POST",
           headers: {
             "Content-type": "application/json",
           },
           body: JSON.stringify({ ...signup.data,...personal.data,emp_status,investment}),
-        });
-        console.log(res);
-        if (!res.ok) {
-          throw new Error("Failed to update topic");
-        }else{
-          router.push("/viewdata");
-        }
+        }).then((res) => {
+          if (res.ok) {
+            return res.json(); 
+          } else {
+            throw new Error('Failed to fetch data');
+          }
+        })
+        .then((data) => {
+            setid(data.result._id)
+            setopenSuccessPage(!openSuccessPage)
+        }).catch((error)=>{
+          console.log(error);
+        })
       }else{
         seterr('All fields are required')
       }
@@ -46,6 +55,8 @@ export const Financial_info=()=>{
     }
   }
     return(
+        <>
+        {openSuccessPage ? <SuccessPage id={id}/> : 
         <>
             <div className='Fin_pagination_1'>1</div>
             <div className='Fin_pagination_2'>2</div>
@@ -82,6 +93,8 @@ export const Financial_info=()=>{
 
             </div>
           </form>
+          </>
+}
         </>
     )
 }

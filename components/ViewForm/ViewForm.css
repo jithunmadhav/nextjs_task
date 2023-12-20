@@ -1,0 +1,37 @@
+.v-form-h1{
+    text-align: center;
+    font-weight: 600;
+    font-size: x-large;
+    color: rgb(78, 78, 78);
+    font-family: monospace;
+}
+.v-fom-outer-div{
+display: flex;
+}
+.v-form-inner-div1{
+width: 50%;
+height: 60vh;
+padding: 0 0  0 250px;
+
+}
+.v-form-inner-div2{
+    width: 50%;
+height: 60vh;
+
+}
+.v-form-textfield{
+    width: 500px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.v-form-textarea{
+    background-color: white;
+    width: 500px;
+}
+.back-btn{
+    position: absolute;
+    left: 14%;
+    bottom: 7%;
+    color: blue;
+    cursor: pointer;
+}

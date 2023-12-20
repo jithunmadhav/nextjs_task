@@ -4,7 +4,6 @@ const initialState = {
   signup: { data: null },
   personal: { data: null },
   financial: { data: null }, 
-  page:'signup',
   refresh: true,
 };
 
@@ -16,8 +15,6 @@ function reducer(state = initialState, action) {
       return { ...state, personal: action.payload };
     case 'financial':
       return { ...state, financial: action.payload };
-    case 'page':
-      return { ...state, page: action.payload };
     case 'refresh':
       return { ...state, refresh: !state.refresh };
     default:

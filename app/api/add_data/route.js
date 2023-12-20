@@ -1,13 +1,19 @@
 import connectMongoDB from "@/libs/mongodb";
 import userModel from "@/models/userSchema";
 import { NextResponse } from "next/server";
+import bcrypt from 'bcrypt'
 
 export async function POST(request) {
    try {
-    const data = await request.json();
+    let data = await request.json();
+    const password=data.password
+    let bcrypPassword=await bcrypt.hash(password,10)
+    data.password=bcrypPassword
+    console.log(password,bcrypPassword);
+
     await connectMongoDB();
-    await userModel.create(data);
-    return NextResponse.json({ message: "Topic Created" }, { status: 201 });
+   let result= await userModel.create(data);
+    return NextResponse.json({ result}, { status: 201 });
    } catch (error) {
     console.log(error);
    }
@@ -17,7 +23,6 @@ export async function GET(request){
     try {
      let email=request.nextUrl.searchParams.get("email")
     let mobile=request.nextUrl.searchParams.get("mobile")
-    console.log(email,mobile)
     await connectMongoDB();
     const result = await userModel.findOne({
         $or: [{ email }, { mobile }],
